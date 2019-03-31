@@ -492,3 +492,27 @@
     height: 0;
   }
 }
+
+/*.mainContainer{
+  visibility: none;
+  -webkit-animation: mainContainer 4.5s step-end forwards;
+  animation: mainContainer 4.5s step-end forwards;
+}
+@keyframes mainContainer {
+  0%{
+    display: none;
+  }
+  25%{
+    display: none;
+  }
+  50%{
+    display: none;
+  }
+  75%{
+    display: none;
+  }
+  100%{
+    display: ;
+  }
+}
+*/
