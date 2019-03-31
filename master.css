@@ -10,8 +10,8 @@
   -moz-animation: header 4.5s forwards;
   -o-animation: header 4.5s forwards;
   animation: header 4.5s forwards;
-
 }
+
 .headerAniContainer > div{
   font-size: 50px;
   font-weight: 800;
@@ -19,7 +19,6 @@
   line-height: 100vh;
   height: 100vh;
   overflow: hidden;
-  overflow-y: scroll;
 }
 .aniOne{
   background-color: white;
@@ -51,16 +50,17 @@
 .headerAniContainerOver{
   height: 0;
   background-color: #d63031;
-  -webkit-animation: test 4.5s forwards;
-  -ms-animation: test 4.5s forwards;
-  -moz-animation: test 4.5s forwards;
-  -o-animation: test 4.5s forwards;
-  animation: test 4.5s forwards;
+  -webkit-animation: headerAniContainerOver 4.5s forwards;
+  -ms-animation: headerAniContainerOver 4.5s forwards;
+  -moz-animation: headerAniContainerOver 4.5s forwards;
+  -o-animation: headerAniContainerOver 4.5s forwards;
+  animation: headerAniContainerOver 4.5s forwards;
   -webkit-animation-delay: 1s;
   -ms-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -o-animation-delay: 1s;
   animation-delay: 1s;
+  overflow: hidden;
 }
 
 -webkit-@keyframes aniOne {
@@ -407,7 +407,7 @@
   }
 }
 
--webkit-@keyframes test {
+-webkit-@keyframes headerAniContainerOver {
   0%{
     height: 0;
   }
@@ -424,7 +424,7 @@
     height: 0;
   }
 }
--ms-@keyframes test {
+-ms-@keyframes headerAniContainerOver {
   0%{
     height: 0;
   }
@@ -441,7 +441,7 @@
     height: 0;
   }
 }
--moz-@keyframes test {
+-moz-@keyframes headerAniContainerOver {
   0%{
     height: 0;
   }
@@ -458,7 +458,7 @@
     height: 0;
   }
 }
--o-@keyframes test {
+-o-@keyframes headerAniContainerOver {
   0%{
     height: 0;
   }
@@ -475,7 +475,7 @@
     height: 0;
   }
 }
-@keyframes test {
+@keyframes headerAniContainerOver {
   0%{
     height: 0;
   }
@@ -493,26 +493,35 @@
   }
 }
 
-/*.mainContainer{
-  visibility: none;
-  -webkit-animation: mainContainer 4.5s step-end forwards;
-  animation: mainContainer 4.5s step-end forwards;
+/* =========== main part css =========== */
+body{
+  height: 100vh;
+  overflow: hidden;
+}
+.mainContainer{
+  padding-left: 10000px;
+  animation: mainContainer 4.5s forwards;
+  color: #d63031;
 }
 @keyframes mainContainer {
   0%{
-    display: none;
+    padding-left: 10000px;
+    color: #d63031;
   }
   25%{
-    display: none;
+    padding-left: 10000px;
+    color: #d63031;
   }
   50%{
-    display: none;
+    padding-left: 10000px;
+    color: #d63031;
   }
   75%{
-    display: none;
+    padding-left: 0;
+    color: #d63031;
   }
   100%{
-    display: ;
+    padding-left: 0;
+    color: black;
   }
 }
-*/
