@@ -605,14 +605,14 @@ body{
 }
 
 
-
 footer{
   margin: 0;
   padding: 0;
-  padding-left: -9999px;
   position: relative;
+  z-index: 3;
 }
 footer .footerFixed{
+  background-color: white;
   position: fixed;
   width: 100%;
   bottom: 0px;
@@ -620,10 +620,6 @@ footer .footerFixed{
   text-align: center;
   border-top: 1px solid #ced6e0;
 }
-
-
-
-
 footer .footerFixed div{
   display: inline-block;
   margin: 20px 6.3% 20px 6.3%;
@@ -634,6 +630,7 @@ footer .footerFixed div{
   /*background-color: #d63031;*/
 }
 footer .footerFixed div:hover{
+  transition: 0.4s;
   background-color: #d63031;
   border: 1px solid white;
 }
