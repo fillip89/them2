@@ -5,11 +5,11 @@
 }
 .headerAniContainer{
   background-color: #d63031;
-  -webkit-animation: header 5s forwards;
-  -ms-animation: header 5s forwards;
-  -moz-animation: header 5s forwards;
-  -o-animation: header 5s forwards;
-  animation: header 5s forwards;
+  -webkit-animation: header 4.5s forwards;
+  -ms-animation: header 4.5s forwards;
+  -moz-animation: header 4.5s forwards;
+  -o-animation: header 4.5s forwards;
+  animation: header 4.5s forwards;
 
 }
 .headerAniContainer > div{
@@ -24,34 +24,42 @@
 .aniOne{
   background-color: white;
   color: #d63031;
-  -webkit-animation: aniOne 5s step-end forwards;
-  -ms-animation: aniOne 5s step-end forwards;
-  -moz-animation: aniOne 5s step-end forwards;
-  -o-animation: aniOne 5s step-end forwards;
-  animation: aniOne 5s step-end forwards;
+  -webkit-animation: aniOne 4.5s step-end forwards;
+  -ms-animation: aniOne 4.5s step-end forwards;
+  -moz-animation: aniOne 4.5s step-end forwards;
+  -o-animation: aniOne 4.5s step-end forwards;
+  animation: aniOne 4.5s step-end forwards;
 }
 .aniTwo{
   background-color: black;
   color: white;
-  -webkit-animation: aniTwo 5s step-end forwards;
-  -ms-animation: aniTwo 5s step-end forwards;
-  -moz-animation: aniTwo 5s step-end forwards;
-  -o-animation: aniTwo 5s step-end forwards;
-  animation: aniTwo 5s step-end forwards;
+  -webkit-animation: aniTwo 4.5s step-end forwards;
+  -ms-animation: aniTwo 4.5s step-end forwards;
+  -moz-animation: aniTwo 4.5s step-end forwards;
+  -o-animation: aniTwo 4.5s step-end forwards;
+  animation: aniTwo 4.5s step-end forwards;
 }
 .aniThree{
   background-color: #d63031;
   color: black;
-  -webkit-animation: aniThree 5s step-end forwards;
-  -ms-animation: aniThree 5s step-end forwards;
-  -moz-animation: aniThree 5s step-end forwards;
-  -o-animation: aniThree 5s step-end forwards;
-  animation: aniThree 5s step-end forwards;
+  -webkit-animation: aniThree 4.5s step-end forwards;
+  -ms-animation: aniThree 4.5s step-end forwards;
+  -moz-animation: aniThree 4.5s step-end forwards;
+  -o-animation: aniThree 4.5s step-end forwards;
+  animation: aniThree 4.5s step-end forwards;
 }
-.test{
+.headerAniContainerOver{
   height: 0;
   background-color: #d63031;
-  animation: test 5s forwards;
+  -webkit-animation: test 4.5s forwards;
+  -ms-animation: test 4.5s forwards;
+  -moz-animation: test 4.5s forwards;
+  -o-animation: test 4.5s forwards;
+  animation: test 4.5s forwards;
+  -webkit-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
   animation-delay: 1s;
 }
 
