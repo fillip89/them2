@@ -492,6 +492,91 @@
     height: 0;
   }
 }
+.headerAniContainerOverBorder{
+  border-top: 0px solid black;
+  -webkit-animation: headerAniContainerOverBorder 4.5s forwards;
+  -ms-animation: headerAniContainerOverBorder 4.5s forwards;
+  -moz-animation: headerAniContainerOverBorder 4.5s forwards;
+  -o-animation: headerAniContainerOverBorder 4.5s forwards;
+  animation: headerAniContainerOverBorder 4.5s forwards;
+  -webkit-animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+-webkit-@keyframes headerAniContainerOverBorder {
+  0%{
+    border: none;
+  }
+  75%{
+    border: none;
+  }
+  76%{
+    border-top: 100vh solid black;
+  }
+  100%{
+    border-top: 0 solid black;
+  }
+}
+-ms-@keyframes headerAniContainerOverBorder {
+  0%{
+    border: none;
+  }
+  75%{
+    border: none;
+  }
+  76%{
+    border-top: 100vh solid black;
+  }
+  100%{
+    border-top: 0 solid black;
+  }
+}
+-moz-@keyframes headerAniContainerOverBorder {
+  0%{
+    border: none;
+  }
+  75%{
+    border: none;
+  }
+  76%{
+    border-top: 100vh solid black;
+  }
+  100%{
+    border-top: 0 solid black;
+  }
+}
+-o-@keyframes headerAniContainerOverBorder {
+  0%{
+    border: none;
+  }
+  75%{
+    border: none;
+  }
+  76%{
+    border-top: 100vh solid black;
+  }
+  100%{
+    border-top: 0 solid black;
+  }
+}
+@keyframes headerAniContainerOverBorder {
+  0%{
+    border: none;
+  }
+  75%{
+    border: none;
+  }
+  76%{
+    border-top: 100vh solid black;
+  }
+  100%{
+    border-top: 0 solid black;
+  }
+}
+
+
 
 /* =========== main part css =========== */
 body{
@@ -500,8 +585,100 @@ body{
 }
 .mainContainer{
   padding-left: 10000px;
+  -webkit-animation: mainContainer 4.5s forwards;
+  -ms-animation: mainContainer 4.5s forwards;
+  -moz-animation: mainContainer 4.5s forwards;
+  -o-animation: mainContainer 4.5s forwards;
   animation: mainContainer 4.5s forwards;
   color: #d63031;
+}
+-webkit-@keyframes mainContainer {
+  0%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  25%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  50%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  75%{
+    padding-left: 0;
+    color: #d63031;
+  }
+  100%{
+    padding-left: 0;
+    color: black;
+  }
+}
+-ms-@keyframes mainContainer {
+  0%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  25%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  50%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  75%{
+    padding-left: 0;
+    color: #d63031;
+  }
+  100%{
+    padding-left: 0;
+    color: black;
+  }
+}
+-moz-@keyframes mainContainer {
+  0%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  25%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  50%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  75%{
+    padding-left: 0;
+    color: #d63031;
+  }
+  100%{
+    padding-left: 0;
+    color: black;
+  }
+}
+-o-@keyframes mainContainer {
+  0%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  25%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  50%{
+    padding-left: 10000px;
+    color: #d63031;
+  }
+  75%{
+    padding-left: 0;
+    color: #d63031;
+  }
+  100%{
+    padding-left: 0;
+    color: black;
+  }
 }
 @keyframes mainContainer {
   0%{
