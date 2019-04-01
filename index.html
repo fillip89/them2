@@ -15,8 +15,14 @@
     <div class="headerAniContainerOver"></div>
     <div class="headerAniContainerOverBorder"></div>
 
+    <!-- 4.5s MAIN ARTICLE DISPLAY BLOCK SCRIPT -->
+    <script type="text/javascript">
+      setTimeout(function(){
+        document.getElementById('articleHide').style.display="block";
+      }, 4500);
+    </script>
 
-    <div class="mainContainer">
+    <div class="mainContainer" id="articleHide" style="display:none;">
       <div id="section1" style="display:block;">
         <div>
           <h1>Page1</h1>
