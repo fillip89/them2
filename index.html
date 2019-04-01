@@ -16,23 +16,59 @@
     <div class="headerAniContainerOverBorder"></div>
 
 
-
     <div class="mainContainer">
-      <div class="section1">
+      <div id="section1" style="display:block;">
         <div>
-          <h1>강남베이스먼트</h1>
-          <h4>fdsa</h4>
-          <p>아이린</p>
+          <h1>Page1</h1>
+          <h4>Page1head4</h4>
+          <p>Page1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
 
+      <div id="section2" style="display:none;">
+        <div>
+          <h1>Page2</h1>
+          <h4>Page2head4</h4>
+          <p>Page2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <div id="section3" style="display:none;">
+        <div>
+          <h1>Page3</h1>
+          <h4>Page3head4</h4>
+          <p>Page3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+      <!-- FOOTER BTN SCRIPT FUNCTION -->
+      <script type="text/javascript">
+        function section1Btn(){
+          document.getElementById('section1').style.display='block';
+          document.getElementById('section2').style.display='none';
+          document.getElementById('section3').style.display='none';
+        };
+        function section2Btn(){
+          document.getElementById('section1').style.display='none';
+          document.getElementById('section2').style.display='block';
+          document.getElementById('section3').style.display='none';
+        };
+        function section3Btn(){
+          document.getElementById('section1').style.display='none';
+          document.getElementById('section2').style.display='none';
+          document.getElementById('section3').style.display='block';
+        };
+      </script>
 
       <footer>
         <div class="footerFixed">
-          <div class="section1Btn"><img src="iHome.svg" onmouseover="this.src='iHomeWhite.svg'" onmouseout="this.src='iHome.svg'"></img></div>
-          <div class="section2Btn"><img src="iWon.svg" onmouseover="this.src='iWonWhite.svg'" onmouseout="this.src='iWon.svg'"></img></div>
-          <div class="section3Btn"><img src="iImage.svg" onmouseover="this.src='iImageWhite.svg'" onmouseout="this.src='iImage.svg'"></img></div>
-          <div class="section4Btn"><img src="iPhone.svg" onmouseover="this.src='iPhoneWhite.svg'" onmouseout="this.src='iPhone.svg'"></img></div>
+          <button type="button" onclick="section1Btn()"><img src="iHome.svg" onmouseover="this.src='iHomeWhite.svg'" onmouseout="this.src='iHome.svg'"></img></button>
+
+          <button type="button" onclick="section2Btn()"><img src="iWon.svg" onmouseover="this.src='iWonWhite.svg'" onmouseout="this.src='iWon.svg'"></img></button>
+
+          <button type="button" onclick="section3Btn()"><img src="iImage.svg" onmouseover="this.src='iImageWhite.svg'" onmouseout="this.src='iImage.svg'"></img></button>
+
+          <button type="button" onclick=""><img src="iPhone.svg" onmouseover="this.src='iPhoneWhite.svg'" onmouseout="this.src='iPhone.svg'"></img></button>
         </div>
       </footer>
     </div>

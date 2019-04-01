@@ -585,26 +585,28 @@
 /* =========== main part css =========== */
 body{
   height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
   z-index: 0;
 }
-.mainContainer .section1 div{
+
+.mainContainer > div div{
   padding: 90px 20px 0 20px;
 }
-.mainContainer .section1 div h1{
+.mainContainer > div div h1{
   padding-bottom: 20px;
   border-bottom: 1px solid #ced6e0;
   font-weight: 500;
 }
-.mainContainer .section1 div h4{
+.mainContainer > div div h4{
   padding-top: 48px;
   font-weight: 400;
 }
-.mainContainer .section1 div p{
+.mainContainer > div div p{
   font-weight: 300;
 }
 
 
+/* Footer */
 footer{
   margin: 0;
   padding: 0;
@@ -671,23 +673,25 @@ footer div.footerFixed{
     height: 80px;
   }
 }
-
-
-footer .footerFixed div{
+footer .footerFixed button{
   display: inline-block;
   margin: 20px 6.3% 20px 6.3%;
   border: 1px solid #ced6e0;
+  background-color: white;
   color: #ced6e0;
   width: 38px;
   height: 38px;
-  /*background-color: #d63031;*/
 }
-footer .footerFixed div:hover{
+footer .footerFixed button:hover{
+  -webkit-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   background-color: #d63031;
   border: 1px solid white;
 }
-footer .footerFixed div img{
+footer .footerFixed button img{
   width: 28px;
   height: 28px;
   padding: 5px;
