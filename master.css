@@ -7,7 +7,6 @@
 .headerAniContainer{
   background-color: #d63031;
   position: relative;
-  z-index: 10;
   overflow: hidden;
 }
 
@@ -237,7 +236,6 @@
 body{
   height: 100vh;
   overflow: hidden;
-  z-index: 0;
 }
 
 .mainContainer{
@@ -265,7 +263,6 @@ footer{
   margin: 0;
   padding: 0;
   position: relative;
-  z-index: 3;
 }
 footer div.footerFixed{
   background-color: white;
