@@ -7,11 +7,11 @@
 .mainContainer > div div h1{
   padding-bottom: 20px;
   border-bottom: 1px solid #ced6e0;
-  font-weight: 500;
+  font-weight: bold;
 }
 .mainContainer > div div h4{
   padding-top: 48px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .mainContainer > div div p{
   font-weight: 300;
