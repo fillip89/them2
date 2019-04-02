@@ -1,0 +1,19 @@
+.mainContainer{
+  margin-bottom: 90px;
+}
+.mainContainer > div div{
+  padding: 90px 20px 0 20px;
+}
+.mainContainer > div div h1{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ced6e0;
+  font-weight: 500;
+}
+.mainContainer > div div h4{
+  padding-top: 48px;
+  font-weight: 400;
+}
+.mainContainer > div div p{
+  font-weight: 300;
+  padding: 10px 0 0 0;
+}
