@@ -18,17 +18,52 @@
   padding: 10px 0 0 0;
 }
 
+#section2 div h4{
+  text-align: left;
+}
 #section2 div div.priceContainer{
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 #section2 div div.priceContainer div.items{
   margin: 15px;
   padding: 0;
-  border: 1px solid #ced6e0;
+  border: 1px solid black;
   width: 120px;
   display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+#section2 div div.priceContainer div.items div.label{
+  position: absolute;
+  background-color: #30336b;
+  color: white;
+  padding: 1px 40px;
+  top: 8px;
+  right: -40px;
+  transform: rotate(45deg);
+  font-size: 12px;
+}
+#section2 div div.priceContainer div.items div.label2{
+  position: absolute;
+  background-color: #e17055;
+  color: white;
+  padding: 1px 40px;
+  top: 8px;
+  right: -33px;
+  transform: rotate(45deg);
+  font-size: 12px;
+}
+#section2 div div.priceContainer div.items div.label3{
+  position: absolute;
+  background-color: #fdcb6e;
+  color: white;
+  padding: 1px 40px;
+  top: 8px;
+  right: -33px;
+  transform: rotate(45deg);
+  font-size: 12px;
 }
 
 #section2 div div.priceContainer div.items h4{
@@ -50,6 +85,8 @@
   margin: 0;
   padding: 0;
   font-size: 11px;
+  font-weight: 400;
+  color: #74b9ff;
 }
 
 #section2 div div.priceContainer div.items ul{
@@ -57,4 +94,12 @@
   text-align: center;
   padding: 10px 0 18px 0;
   font-size: 14px;
+}
+
+
+@media (min-width: 800px) {
+  .mainContainer{
+    width: 800px;
+    margin: 0 auto 90px auto;
+  }
 }
