@@ -5,12 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="master.css">
   </head>
-  <body>
+  <body id="bodyOverflow">
+    <!-- INTRO ANIMATION SCRIPT -->
+    <script type="text/javascript">
+      setTimeout(function(){
+        document.getElementById('aniOne').style.display='none';
+        document.getElementById('aniTwo').style.display='block';
+        document.getElementById('aniThree').style.display='none';
+        document.getElementById('aniFour').style.display='none';
+      }, 1125);
+      setTimeout(function(){
+        document.getElementById('aniOne').style.display='none';
+        document.getElementById('aniTwo').style.display='none';
+        document.getElementById('aniThree').style.display='block';
+        document.getElementById('aniFour').style.display='none';
+      }, 2250);
+      setTimeout(function(){
+        document.getElementById('aniOne').style.display='none';
+        document.getElementById('aniTwo').style.display='none';
+        document.getElementById('aniThree').style.display='none';
+        document.getElementById('aniFour').style.display='block';
+      }, 3375);
+      setTimeout(function(){
+        document.getElementById('aniOne').style.display='none';
+        document.getElementById('aniTwo').style.display='none';
+        document.getElementById('aniThree').style.display='none';
+        document.getElementById('aniFour').style.display='block';
+      }, 4450);
+    </script>
+
+    <!-- INTRO ANIMATION CONTAINER -->
     <div class="headerAniContainer">
-      <div class="aniOne">HELLO</div>
-      <div class="aniTwo">THIS IS</div>
-      <div class="aniThree">ANIMATION</div>
-      <div class="aniFour"></div>
+      <div class="aniOne" id="aniOne" style="display:block;">강남가라오케</div>
+      <div class="aniTwo" id="aniTwo" style="display:none;">강남셔츠룸</div>
+      <div class="aniThree" id="aniThree" style="display:none;">김필립</div>
+      <div class="aniFour" id="aniFour" style="display:none;"></div>
     </div>
     <div class="headerAniContainerOver"></div>
     <div class="headerAniContainerOverBorder"></div>
@@ -18,7 +47,8 @@
     <!-- 4.5s MAIN ARTICLE DISPLAY BLOCK SCRIPT -->
     <script type="text/javascript">
       setTimeout(function(){
-        document.getElementById('articleHide').style.display="block";
+        document.getElementById('articleHide').style.display='block';
+        document.getElementById('bodyOverflow').style.overflow='visible';
       }, 4500);
     </script>
 
@@ -28,6 +58,7 @@
           <h1>Page1</h1>
           <h4>Page1head4</h4>
           <p>Page1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
 
@@ -64,17 +95,21 @@
           document.getElementById('section2').style.display='none';
           document.getElementById('section3').style.display='block';
         };
+        function call(){
+          location.href='tel:010-4994-3368';
+        }
       </script>
 
+      <!-- FOOTER POSITION FIXED-->
       <footer>
         <div class="footerFixed">
-          <button type="button" onclick="section1Btn()"><img src="iHome.svg" onmouseover="this.src='iHomeWhite.svg'" onmouseout="this.src='iHome.svg'"></img></button>
+          <div id="iHome" onclick="section1Btn()"><img id="iHomeImg" src="iHome.svg" onmouseover="this.src='iHomeWhite.svg'" onmouseout="this.src='iHome.svg'"></img></div>
 
-          <button type="button" onclick="section2Btn()"><img src="iWon.svg" onmouseover="this.src='iWonWhite.svg'" onmouseout="this.src='iWon.svg'"></img></button>
+          <div id="iWon" onclick="section2Btn()"><img id="iWonImg" src="iWon.svg" onmouseover="this.src='iWonWhite.svg'" onmouseout="this.src='iWon.svg'"></img></div>
 
-          <button type="button" onclick="section3Btn()"><img src="iImage.svg" onmouseover="this.src='iImageWhite.svg'" onmouseout="this.src='iImage.svg'"></img></button>
+          <div id="iImage" onclick="section3Btn()"><img id="iImageImg" src="iImage.svg" onmouseover="this.src='iImageWhite.svg'" onmouseout="this.src='iImage.svg'"></img></div>
 
-          <button type="button" onclick=""><img src="iPhone.svg" onmouseover="this.src='iPhoneWhite.svg'" onmouseout="this.src='iPhone.svg'"></img></button>
+          <div onclick="call()"><img src="iPhone.svg" onmouseover="this.src='iPhoneWhite.svg'" onmouseout="this.src='iPhone.svg'"></img></div>
         </div>
       </footer>
     </div>

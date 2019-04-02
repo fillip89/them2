@@ -22,39 +22,30 @@
 .aniOne{
   background-color: white;
   color: #d63031;
-  -webkit-animation: aniOne 4.5s step-end forwards;
-  -ms-animation: aniOne 4.5s step-end forwards;
-  -moz-animation: aniOne 4.5s step-end forwards;
-  -o-animation: aniOne 4.5s step-end forwards;
-  animation: aniOne 4.5s step-end forwards;
 }
 .aniTwo{
   background-color: black;
   color: white;
-  -webkit-animation: aniTwo 4.5s step-end forwards;
-  -ms-animation: aniTwo 4.5s step-end forwards;
-  -moz-animation: aniTwo 4.5s step-end forwards;
-  -o-animation: aniTwo 4.5s step-end forwards;
-  animation: aniTwo 4.5s step-end forwards;
 }
 .aniThree{
   background-color: #d63031;
   color: black;
-  -webkit-animation: aniThree 4.5s step-end forwards;
-  -ms-animation: aniThree 4.5s step-end forwards;
-  -moz-animation: aniThree 4.5s step-end forwards;
-  -o-animation: aniThree 4.5s step-end forwards;
-  animation: aniThree 4.5s step-end forwards;
 }
 .aniFour{
   background-color: #d63031;
   color: black;
-  -webkit-animation: header 4.5s step-end forwards;
-  -ms-animation: header 4.5s step-end forwards;
-  -moz-animation: header 4.5s step-end forwards;
-  -o-animation: header 4.5s step-end forwards;
-  animation: header 4.5s step-end forwards;
+  animation: aniFour 1.125s forwards;
 }
+@keyframes aniFour {
+  0%{
+    height: 100vh
+  }
+  100%{
+    height: 0px;
+  }
+}
+
+
 .headerAniContainerOver{
   height: 0;
   background-color: #d63031;
@@ -69,348 +60,6 @@
   -o-animation-delay: 1s;
   animation-delay: 1s;
   overflow: hidden;
-}
--webkit-@keyframes aniOne {
-  0%{
-    height: 100vh;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
--ms-@keyframes aniOne {
-  0%{
-    height: 100vh;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
--moz-@keyframes aniOne {
-  0%{
-    height: 100vh;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
--o-@keyframes aniOne {
-  0%{
-    height: 100vh;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
-@keyframes aniOne {
-  0%{
-    height: 100vh;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
--webkit-@keyframes aniTwo {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 100vh;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
--ms-@keyframes aniTwo {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 100vh;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
--moz-@keyframes aniTwo {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 100vh;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
--o-@keyframes aniTwo {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 100vh;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
-@keyframes aniTwo {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 100vh;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
-
--webkit-@keyframes aniThree {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 100vh;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
--ms-@keyframes aniThree {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 100vh;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
--moz-@keyframes aniThree {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 100vh;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
--o-@keyframes aniThree {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 100vh;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
-@keyframes aniThree {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 100vh;
-  }
-  75%{
-    height: 0;
-  }
-  100%{
-    height: 0;
-  }
-}
-
--webkit-@keyframes header {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 100vh;
-  }
-  100%{
-    height: 0;
-  }
-}
--ms-@keyframes header {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 100vh;
-  }
-  100%{
-    height: 0;
-  }
-}
--moz-@keyframes header {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 100vh;
-  }
-  100%{
-    height: 0;
-  }
-}
--o-@keyframes header {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 100vh;
-  }
-  100%{
-    height: 0;
-  }
-}
-@keyframes header {
-  0%{
-    height: 0;
-  }
-  25%{
-    height: 0;
-  }
-  50%{
-    height: 0;
-  }
-  75%{
-    height: 100vh;
-  }
-  100%{
-    height: 0;
-  }
 }
 
 -webkit-@keyframes headerAniContainerOver {
@@ -587,10 +236,13 @@
 /* =========== main part css =========== */
 body{
   height: 100vh;
-  overflow-y: hidden;
+  overflow: hidden;
   z-index: 0;
 }
 
+.mainContainer{
+  margin-bottom: 90px;
+}
 .mainContainer > div div{
   padding: 90px 20px 0 20px;
 }
@@ -670,16 +322,16 @@ footer div.footerFixed{
     height: 80px;
   }
 }
-footer .footerFixed button{
+footer .footerFixed div{
   display: inline-block;
   margin: 20px 6.3% 20px 6.3%;
-  border: 1px solid #ced6e0;
+  border: 1px solid white;
   background-color: white;
   color: #ced6e0;
   width: 38px;
   height: 38px;
 }
-footer .footerFixed button:hover{
+footer .footerFixed div:hover{
   -webkit-transition: 0.4s;
   -ms-transition: 0.4s;
   -moz-transition: 0.4s;
@@ -688,7 +340,7 @@ footer .footerFixed button:hover{
   background-color: #d63031;
   border: 1px solid white;
 }
-footer .footerFixed button img{
+footer .footerFixed div img{
   width: 28px;
   height: 28px;
   padding: 5px;
