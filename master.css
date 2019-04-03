@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   font-family: "Nanum Gothic", sans-serif;
-  line-height: normal;
+}
+p{
+  line-height: 20px;
 }
 .headerAniContainer{
   background-color: #d63031;
@@ -33,7 +35,43 @@
 .aniFour{
   background-color: #d63031;
   color: black;
+  -webkit-animation: aniFour 1.125s forwards;
+  -ms-animation: aniFour 1.125s forwards;
+  -moz-animation: aniFour 1.125s forwards;
+  -o-animation: aniFour 1.125s forwards;
   animation: aniFour 1.125s forwards;
+}
+-webkit-@keyframes aniFour {
+  0%{
+    height: 100vh
+  }
+  100%{
+    height: 0px;
+  }
+}
+-ms-@keyframes aniFour {
+  0%{
+    height: 100vh
+  }
+  100%{
+    height: 0px;
+  }
+}
+-moz-@keyframes aniFour {
+  0%{
+    height: 100vh
+  }
+  100%{
+    height: 0px;
+  }
+}
+-o-@keyframes aniFour {
+  0%{
+    height: 100vh
+  }
+  100%{
+    height: 0px;
+  }
 }
 @keyframes aniFour {
   0%{

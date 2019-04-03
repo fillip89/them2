@@ -18,19 +18,70 @@
   padding: 10px 0 0 0;
 }
 
+
+.mainContainer div .section1AnimationContainer{
+  margin: 25px 0;
+  overflow: hidden;
+  position: relative;
+}
+.mainContainer div .section1AnimationContainer .section1Animation{
+  padding: 0;
+  font-size: 80px;
+  font-weight: 800;
+  text-align: justify;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#colorChangeFont{
+  animation: colorChangeFont 4.5s infinite;
+}
+@keyframes colorChangeFont {
+  0%{
+    color: black;
+  }
+  33.3%{
+    color: #0984e3;
+  }
+  66.6%{
+    color: #d63031;
+  }
+  100%{
+    color: black;
+  }
+}
+#whiteFont{
+  color: white;
+  margin-left: 390px;
+  animation: whiteFont 6s infinite;
+  animation-timing-function: linear;
+}
+@keyframes whiteFont {
+  0%{
+    margin-left: 390px;
+  }
+  100%{
+    margin-left: -390px;
+  }
+}
+
+
 #section2 div h4{
   text-align: left;
 }
 #section2 div div.priceContainer{
   margin: 0;
   padding: 0;
-  text-align: left;
+  text-align: center;
 }
 #section2 div div.priceContainer div.items{
   margin: 15px;
   padding: 0;
-  border: 1px solid black;
-  width: 120px;
+  border: 1px solid #ced6e0;
+  box-shadow: 0 0 10px #ced6e0;
+  width: 110px;
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -43,7 +94,7 @@
   top: 8px;
   right: -40px;
   transform: rotate(45deg);
-  font-size: 12px;
+  font-size: 11px;
 }
 #section2 div div.priceContainer div.items div.label2{
   position: absolute;
@@ -53,17 +104,17 @@
   top: 8px;
   right: -33px;
   transform: rotate(45deg);
-  font-size: 12px;
+  font-size: 11px;
 }
 #section2 div div.priceContainer div.items div.label3{
   position: absolute;
-  background-color: #fdcb6e;
+  background-color: #0fbcf9;
   color: white;
   padding: 1px 40px;
   top: 8px;
   right: -33px;
   transform: rotate(45deg);
-  font-size: 12px;
+  font-size: 11px;
 }
 
 #section2 div div.priceContainer div.items h4{
@@ -96,7 +147,11 @@
   font-size: 14px;
 }
 
-
+@media (max-width: 350px) {
+  #iHome, #iWon, #iImage, #iCall{
+    margin: 20px 15px 20px 15px;
+  }
+}
 @media (min-width: 800px) {
   .mainContainer{
     width: 800px;
