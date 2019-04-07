@@ -1,5 +1,6 @@
 .mainContainer{
   margin-bottom: 90px;
+  text-align: center;
 }
 .mainContainer > div div{
   padding: 90px 20px 0 20px;
@@ -18,11 +19,11 @@
   padding: 10px 0 0 0;
 }
 
-
-
-#section2 div h4{
-  text-align: left;
+.googlemap{
+  text-align: center;
 }
+
+
 #section2 div div.priceContainer{
   margin: 0;
   padding: 0;
@@ -116,6 +117,9 @@
 @media (max-width: 350px) {
   #iHome, #iWon, #iImage, #iCall{
     margin: 20px 15px 20px 15px;
+  }
+  #section3 > div .imageContainer .imageItems{
+    height: 180px;
   }
 }
 @media (max-width: 500px) {
